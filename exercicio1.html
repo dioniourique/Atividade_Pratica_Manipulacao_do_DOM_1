@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="chanceText()">CLIQUE AQUI PARA MUDAR O TEXTO</button>
+
+    <P id="myText">AQUI VAI APARECER ALGUMA COISA...</P>
+
+    <script>
+        function chanceText() {
+            let name = prompt("por favor, digite o seu nome");
+            if (name != null) {
+                document.getElementById("myText").innerHTML = "E ai " + name + "! Você está deixando o seu site dinâmico.";
+            }
+        }
+    </script>
+</body>
+
+</html>
